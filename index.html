@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Static Chat UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+  <div class="w-96 bg-white rounded-lg shadow-lg flex flex-col">
+
+    <div class="bg-blue-500 text-white p-4 rounded-t-lg">
+      <p class="font-bold text-2xl">Alice</p>
+      <p class="text-xs text-blue-100">Online</p>
+    </div>
+
+    <div class="flex-1 p-4 space-y-4 overflow-y-auto">
+
+      <div class="flex">
+        <div class="bg-gray-200 p-3 rounded-lg max-w-xs text-base">
+          Hi! How are you?
+        </div>
+      </div>
+
+      <div class="flex justify-end">
+        <div class="bg-blue-500 text-white p-3 rounded-lg max-w-xs text-base">
+          I'm good! What about you?
+        </div>
+      </div>
+
+      <div class="flex">
+        <div class="bg-gray-200 p-3 rounded-lg max-w-xs text-base">
+          Doing well, thanks!
+        </div>
+      </div>
+
+      <div class="flex justify-end">
+        <div class="bg-blue-500 text-white p-3 rounded-lg max-w-xs text-base">
+          Are you free this weekend?
+        </div>
+      </div>
+
+      <div class="flex">
+        <div class="bg-gray-200 p-3 rounded-lg max-w-xs text-base">
+          Yes! Let's meet up.
+        </div>
+      </div>
+
+    </div>
+
+    <div class="p-4 border-t flex gap-2">
+      <input
+        type="text"
+        placeholder="Type a message..."
+        class="flex-1 border rounded-full px-4 py-2 text-base focus:outline-none"
+      />
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-full text-base">
+        Send
+      </button>
+    </div>
+
+  </div>
+
+</body>
+</html>
